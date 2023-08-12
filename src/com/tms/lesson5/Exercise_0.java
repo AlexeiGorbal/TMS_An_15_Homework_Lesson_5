@@ -13,14 +13,16 @@ import java.util.Scanner;
 
 
 public class Exercise_0 {
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the size of array");
+
         System.out.print("One: ");
         int one = sc.nextInt();
+
         System.out.print("Two: ");
         int two = sc.nextInt();
+
         System.out.print("Three: ");
         int three = sc.nextInt();
 
@@ -50,5 +52,4 @@ public class Exercise_0 {
         System.out.println(Arrays.deepToString(array));
 
     }
-
 }
