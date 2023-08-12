@@ -30,13 +30,27 @@ public class Exercise_4 {
             }
         }
 
-        System.out.print("\nArray diagonal");
+        System.out.print("\nFirst diagonal of the array");
 
         for (int i = 0; i < array.length; i++) {
             System.out.println();
             for (int j = 0; j < i + 1; j++) {
                 if (j == i) {
                     System.out.print(array[i][j] + " ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+        }
+
+        System.out.print("\nSecond diagonal of the array");
+
+        for (int i = 0; i < array.length; i++) {
+            System.out.println();
+            for (int j = 0; j < array.length; j++) {
+                if (a - 1 == j) {
+                    System.out.print(array[i][j] + " ");
+                    a--;
                 } else {
                     System.out.print("  ");
                 }
