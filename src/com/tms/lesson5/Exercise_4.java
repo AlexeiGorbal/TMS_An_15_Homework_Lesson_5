@@ -21,7 +21,6 @@ public class Exercise_4 {
         int[][] array = new int[a][b];
 
         System.out.print("Source array");
-
         for (int i = 0; i < array.length; i++) {
             System.out.println();
             for (int j = 0; j < array.length; j++) {
@@ -31,7 +30,6 @@ public class Exercise_4 {
         }
 
         System.out.print("\nFirst diagonal of the array");
-
         for (int i = 0; i < array.length; i++) {
             System.out.println();
             for (int j = 0; j < i + 1; j++) {
@@ -44,7 +42,6 @@ public class Exercise_4 {
         }
 
         System.out.print("\nSecond diagonal of the array");
-
         for (int i = 0; i < array.length; i++) {
             System.out.println();
             for (int j = 0; j < array.length; j++) {
@@ -56,6 +53,5 @@ public class Exercise_4 {
                 }
             }
         }
-
     }
 }
