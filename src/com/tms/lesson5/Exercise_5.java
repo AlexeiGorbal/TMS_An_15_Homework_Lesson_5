@@ -23,7 +23,6 @@ public class Exercise_5 {
         int[][] array = new int[a][b];
 
         System.out.print("Source array");
-
         for (int i = 0; i < array.length; i++) {
             System.out.println();
             for (int j = 0; j < array.length; j++) {
@@ -33,6 +32,7 @@ public class Exercise_5 {
         }
 
         int[] arrayTwo = new int[a * b];
+
         int k = 0;
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length; j++) {
@@ -41,13 +41,10 @@ public class Exercise_5 {
         }
 
         System.out.println("\n" + Arrays.toString(arrayTwo));
-
         Arrays.sort(arrayTwo);
-
         System.out.println("\n" + Arrays.toString(arrayTwo));
 
         int j = a;
-
         for (int i = 0; i < arrayTwo.length; i++) {
             if (i < j) {
                 System.out.print(arrayTwo[i] + " ");
@@ -56,6 +53,5 @@ public class Exercise_5 {
                 j += a;
             }
         }
-
     }
 }
