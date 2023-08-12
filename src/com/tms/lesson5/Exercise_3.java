@@ -20,10 +20,9 @@ public class Exercise_3 {
         System.out.print("b: ");
         int b = scanner.nextInt();
 
-        int sum = 0;
-
         int[][] array = new int[a][b];
 
+        int sum = 0;
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length; j++) {
                 array[i][j] = new Random().nextInt(50);
