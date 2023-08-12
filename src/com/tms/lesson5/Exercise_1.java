@@ -24,8 +24,7 @@ public class Exercise_1 {
         int[][] array = new int[8][8];
 
         for (int i = 0; i < array.length; i++) {
-            System.out.println();
-            for (int j = 0; j < array[i].length; j++) {
+            for (int j = 0; j < array.length; j++) {
                 if (i % 2 != 0) {
                     if (j % 2 != 0) {
                         System.out.print("W ");
@@ -40,7 +39,7 @@ public class Exercise_1 {
                     }
                 }
             }
+            System.out.println();
         }
-
     }
 }
