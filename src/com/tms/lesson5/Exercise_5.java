@@ -22,36 +22,28 @@ public class Exercise_5 {
 
         int[][] array = new int[a][b];
 
-        System.out.print("Source array");
+        System.out.println("Source array:");
         for (int i = 0; i < array.length; i++) {
-            System.out.println();
-            for (int j = 0; j < array.length; j++) {
-                array[i][j] = new Random().nextInt(20);
+            for (int j = 0; j < array[i].length; j++) {
+                array[i][j] = new Random().nextInt(50);
                 System.out.print(array[i][j] + " ");
             }
+            System.out.println();
         }
 
-        int[] arrayTwo = new int[a * b];
+        int[] arrayTwo = new int[b];
 
-        int k = 0;
+        System.out.println("\nSorted array:");
         for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array.length; j++) {
-                arrayTwo[k++] = array[i][j];
+            int p = 0;
+            for (int j = 0; j < array[i].length; j++) {
+                arrayTwo[p++] = array[i][j];
             }
-        }
-
-        System.out.println("\n" + Arrays.toString(arrayTwo));
-        Arrays.sort(arrayTwo);
-        System.out.println("\n" + Arrays.toString(arrayTwo));
-
-        int j = a;
-        for (int i = 0; i < arrayTwo.length; i++) {
-            if (i < j) {
-                System.out.print(arrayTwo[i] + " ");
-            } else {
-                System.out.print("\n"+arrayTwo[i] + " ");
-                j += a;
+            Arrays.sort(arrayTwo);
+            for (int k = 0; k < arrayTwo.length; k++) {
+                System.out.print(arrayTwo[k] + " ");
             }
+            System.out.println();
         }
     }
 }
